@@ -1,0 +1,5 @@
+@use "./var" as *;
+body{
+    font-family: "DM Sans";
+    background-color: $accent-color;
+}
