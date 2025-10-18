@@ -1,1 +1,109 @@
 @use "../base/var" as *;
+
+.header{
+    padding-top: 18px;
+    padding-bottom:18px ;
+    background-color: $main-color;
+
+    @media screen and (min-width:736px) {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    @media screen and (min-width:1248px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav{
+        display: none;
+
+        @media screen and (min-width:736px) {
+            display: block;
+        }
+    }
+
+    &__list{
+        display: flex;
+        gap: 16px;
+
+        @media screen and (min-width:1248px) {
+            gap: 20px;
+        }
+    }
+
+    &__link{
+font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.04em;
+text-align: center;
+color: $accent-color;
+
+
+    }
+
+    &__logo{
+
+font-weight: 700;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.04em;
+text-transform: uppercase;
+text-align: center;
+color: $accent-color;
+display: flex;
+align-items: center;
+@media screen and (min-width:736px) {
+    margin-left: 94px;
+}
+@media screen and (min-width:1248px) {
+    margin-left: 322px;
+}
+
+    }
+
+    &__grid{
+        width: 16px;
+        height: 17px;
+        margin-right: 8px;
+        fill: $accent-color;
+    }
+
+    &__btn{
+        display: none;
+        background-color: transparent;
+        margin-left: auto;
+
+        @media screen and (min-width:736px) {
+            display: block;
+        }
+    }
+
+    &__basket{
+        fill: $accent-color;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__button{
+        background-color: transparent;
+        margin-left: auto;
+
+        @media screen and (min-width:736px) {
+            display: none;
+        }
+    }
+
+    &__lister{
+        width: 20px;
+        height: 20px;
+        fill:  $accent-color;
+    }
+}
+
