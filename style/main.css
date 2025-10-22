@@ -173,4 +173,68 @@ body {
   width: 20px;
   height: 20px;
   fill: #AE1332;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.hero {
+  padding-top: 56px;
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 736px) {
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 137px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .hero {
+    padding-bottom: 150px;
+  }
+}
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 335px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.hero__img {
+  width: 311px;
+  height: 484px;
+  border-radius: 500px;
+}
+.hero__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 106px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 355px;
+  height: 532px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 500px;
+  border-style: solid;
+  border-width: 10px;
+}
+.hero__box {
+  position: relative;
+}
+.hero__btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  rotate: 14deg;
+}
+
+/*# sourceMappingURL=main.css.map */

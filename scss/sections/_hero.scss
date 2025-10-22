@@ -1,1 +1,66 @@
 @use "../base/var" as *;
+
+.hero {
+  padding-top: 56px;
+  padding-bottom: 80px;
+  @media screen and (min-width: 736px) {
+    padding-top: 64px;
+    padding-bottom: 137px;
+  }
+  @media screen and (min-width: 1248px) {
+    padding-bottom: 150px;
+  }
+
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 335px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 1px;//to do
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  &__img{
+    width: 311px;
+    height: 484px;
+    border-radius: 500px;
+  }
+  &__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 106px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 355px;
+    height: 532px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border-radius: 500px;
+    border-style: solid ;
+    border-width: 10px ;
+    //border-image-source: linear-gradient(to top, #ffffff, yellow);
+    //to do
+  }
+  &__box {
+    position: relative;
+  }
+  &__btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $main-color;
+    rotate: 14deg;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+  }
+}//sass scss/main.scss style/main.css
