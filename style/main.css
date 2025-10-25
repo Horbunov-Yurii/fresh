@@ -238,8 +238,8 @@ body {
   border-radius: 50%;
   background-color: #FFFFFF;
   position: absolute;
-  left: 630px;
-  bottom: -595px;
+  left: 172px;
+  bottom: -590px;
   transform: translate(-50%, -50%) rotate(340deg);
   color: #AE1332;
   text-align: center;
@@ -251,6 +251,12 @@ body {
   text-transform: uppercase;
   transition-property: color;
   transition-duration: 250ms;
+}
+@media screen and (min-width: 736px) {
+  .hero__btn {
+    left: 364px;
+    bottom: -595px;
+  }
 }
 .hero__btn:hover {
   color: #A4CB66;
