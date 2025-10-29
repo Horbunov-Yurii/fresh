@@ -1,1 +1,127 @@
 @use "../base/var" as *;
+
+.plan {
+  padding-bottom: 80px;
+  @media screen and (min-width: 736px) {
+    padding-bottom: 144px;
+  }
+  &__title {
+    color: $main-color;
+    text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.12px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 736px) {
+      font-size: 40px;
+      line-height: 1.1; /* 110% */
+      letter-spacing: -1.6px;
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__subtitle {
+    color: $main-color;
+    text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    margin-bottom: 44px;
+
+    @media screen and (min-width: 736px) {
+      width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__item {
+    display: flex;
+    background-color: $main-color;
+    height: 112px;
+    gap: 14px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 736px) {
+      width: 389px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 128px;
+    }
+  }
+
+  &__list {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+
+    @media screen and (min-width: 736px) {
+      gap: 24px;
+    }
+
+    @media screen and (min-width: 1248px) {
+      flex-direction: row;
+    }
+  }
+
+  &__step {
+    height: 48px;
+    width: 136px;
+    background-color: $accent-color;
+    border-radius: 200px;
+    color: $main-color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    /* 133.333% */
+    letter-spacing: -0.72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item:nth-child(2) {
+    .plan__step {
+      background-color: $bg-color;
+    }
+  }
+
+  &__item:nth-child(3) {
+    .plan__step {
+      background-color: $btn-color;
+    }
+  }
+
+  &__caption {
+    color: $text-color;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    /* 128.571% */
+    letter-spacing: -0.56px;
+    width: 145px;
+
+    @media screen and (min-width: 736px) {
+      width: 199px;
+    }
+  }
+
+  &__img{
+    @media screen and (min-width: 1248px) {
+      width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

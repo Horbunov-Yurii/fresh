@@ -319,4 +319,127 @@ body {
   line-height: 14px;
   letter-spacing: -0.48px;
   text-transform: uppercase;
+}
+
+.plan {
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 736px) {
+  .plan {
+    padding-bottom: 144px;
+  }
+}
+.plan__title {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 736px) {
+  .plan__title {
+    font-size: 40px;
+    line-height: 1.1; /* 110% */
+    letter-spacing: -1.6px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.plan__subtitle {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 736px) {
+  .plan__subtitle {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.plan__item {
+  display: flex;
+  background-color: #FFFFFF;
+  height: 112px;
+  gap: 14px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 736px) {
+  .plan__item {
+    width: 389px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 128px;
+  }
+}
+.plan__list {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 736px) {
+  .plan__list {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .plan__list {
+    flex-direction: row;
+  }
+}
+.plan__step {
+  height: 48px;
+  width: 136px;
+  background-color: #AE1332;
+  border-radius: 200px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+  /* 133.333% */
+  letter-spacing: -0.72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plan__item:nth-child(2) .plan__step {
+  background-color: #A4CB66;
+}
+.plan__item:nth-child(3) .plan__step {
+  background-color: #F5CE13;
+}
+.plan__caption {
+  color: #000;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  /* 128.571% */
+  letter-spacing: -0.56px;
+  width: 145px;
+}
+@media screen and (min-width: 736px) {
+  .plan__caption {
+    width: 199px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .plan__img {
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
