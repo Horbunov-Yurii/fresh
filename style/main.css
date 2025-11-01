@@ -583,4 +583,46 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.organic {
+  padding: 80px 0;
+}
+@media screen and (min-width: 736px) {
+  .organic {
+    padding: 144px 0;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .organic {
+    padding: 150px 0;
+  }
+}
+.organic__title {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 736px) {
+  .organic__title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -1.6px;
+  }
+}
+.organic__text {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  width: 334px;
 }/*# sourceMappingURL=main.css.map */
