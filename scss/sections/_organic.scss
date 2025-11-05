@@ -1,53 +1,231 @@
 @use "../base/var" as *;
 
-.organic{
-    padding: 80px 0;
+.organic {
+  padding: 80px 0;
 
-    @media screen and (min-width:736px) {
-        padding: 144px 0;
+  @media screen and (min-width: 736px) {
+    padding: 144px 0;
+  }
+  @media screen and (min-width: 1248px) {
+    padding: 150px 0;
+  }
+
+  &__title {
+    color: $main-color;
+    text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -1.12px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 736px) {
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: -1.6px;
     }
-    @media screen and (min-width:1248px) {
-        padding: 150px 0;
-    }
+  }
 
-    &__title{
-        color: $main-color;
-        text-align: center;
-        text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 28px;
-        letter-spacing: -1.12px;
-        text-transform: uppercase;
-        margin-bottom: 14px;
+  &__text {
+    color: $main-color;
+    text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
-    @media screen and (min-width:736px) {
-        font-size: 40px;
-        line-height: 44px;
-        letter-spacing: -1.6px;
-    }
-    }
-
-    &__text{
-        color: $main-color;
-        text-align: center;
-        text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: -0.56px;
-        width: 334.0px;
-    }
-
-    &__list{
-
-    }
-
-    &__item{
-
+      @media screen and (min-width: 355px) {
+      width: 334px;
     }
 
-    &__cap{
-        
+     @media screen and (min-width: 736px) {
+      width: 547.0px;
     }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 44px;
+
+     @media screen and (min-width: 736px) {
+        gap: 16px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1248px) {
+        gap: 24px;
+        }
+
+  }
+
+  &__item {
+    padding: 64px 20px 24px 20px;
+    background-color: #f8766b;
+    border-radius: 20px;
+
+     @media screen and (min-width: 736px) {
+       padding: 64px 24px 24px 24px;
+    }
+
+    @media screen and (min-width: 1248px) {
+        flex-basis: calc((100% - 48px)/ 3);
+        }
+
+    &:nth-child(2) {
+      background: #edd251;
+    }
+
+    &:nth-child(3) {
+      background: #9dc262;
+    }
+
+    &:nth-child(4) {
+      background: #bfd663;
+    }
+
+    &:nth-child(5) {
+      background: #e93f29;
+    }
+
+    &:nth-child(6) {
+      background: #db4f4b;
+    }
+
+     &:nth-child(7) {
+      background: #9B5366;
+      display: none;
+
+        @media screen and (min-width: 736px) {
+        display: block;
+        }
+    }
+
+     &:nth-child(8) {
+     background: #F47F4C;
+     display: none;
+
+       @media screen and (min-width: 736px) {
+         display: block;
+        }
+    }
+
+     &:nth-child(9) {
+     background: #98B37E;
+     display: none;
+
+     @media screen and (min-width: 1248px) {
+         display: block;
+        }
+    }
+  }
+
+  &__cap {
+    color: $main-color;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: -0.96px;
+
+      @media screen and (min-width: 736px) {
+      font-size: 32px;
+    }
+  }
+
+  &__name {
+    color: $main-color;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+
+     @media screen and (min-width: 736px) {
+      font-size: 18px;
+      margin-top: 7px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 26px;
+
+      @media screen and (min-width: 736px) {
+        margin-bottom: 5px;
+    }
+  }
+
+  &__btn {
+    color: $accent-color;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 200px;
+    background: $main-color;
+
+      @media screen and (min-width: 736px) {
+       font-size: 18px;
+       padding: 12px 21px;
+        }
+  }
+
+  &__button{
+      background-color: #9dc262;
+      border-radius: 100%;
+      text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+    width: 80.0px;
+    height: 80.0px;
+    transform: rotate(-20deg);
+    margin-top: 44px;
+    color: $main-color;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 736px) {
+       width: 144px;
+       height: 144px;
+       font-size: 18px;
+        }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    fill: $main-color;
+    transform: rotate(-14deg);
+    width: 14.0px;
+    height: 14.0px;
+    
+  }
+
 }
