@@ -1,19 +1,53 @@
 @use "../base/var" as *;
 
-.fresh{
-    padding-top: 96px;
-    padding-bottom: 80px;
-    
+.fresh {
+  padding-top: 96px;
+  padding-bottom: 80px;
 }
 
+.fresh__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
-.fresh-title{
-    font-family: var(--font-family);
-font-weight: 500;
-font-size: 32px;
-line-height: 100%;
-letter-spacing: -0.04em;
-text-transform: uppercase;
-text-align: center;
-color: #fff;
+  @media screen and (min-width: 735px) {
+    font-size: 54px;
+    width: 648px;
+  }
+  @media screen and (min-width: 1248px) {
+    font-size: 64px;
+    width: 740px;
+  }
+}
+
+.fresh__box {
+  display: flex;
+  gap: 16px;
+}
+
+.fresh__img__melon {
+  width: 335px;
+  height: 476px;
+  border-radius: 20px;
+  @media screen and (min-width: 1248px) {
+    width: 792px;
+    height: 502px;
+  }
+}
+.fresh__img__blueberry {
+  display: none;
+  height: 480px;
+  width: 344px;
+  border-radius: 20px;
+  @media screen and (min-width: 735px) {
+    display: block;
+  }
 }
