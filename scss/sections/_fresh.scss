@@ -1,1 +1,19 @@
 @use "../base/var" as *;
+
+.fresh{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    
+}
+
+
+.fresh-title{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: -0.04em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+}
