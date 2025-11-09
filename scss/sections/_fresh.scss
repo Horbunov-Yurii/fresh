@@ -1,8 +1,14 @@
 @use "../base/var" as *;
 
 .fresh {
-  padding-top: 96px;
   padding-bottom: 80px;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .fresh__title {
@@ -18,11 +24,15 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 735px) {
+  transform: translateY(40px);
+
+  @media screen and (min-width: 736px) {
+      transform: translateY(32px);
     font-size: 54px;
     width: 648px;
   }
   @media screen and (min-width: 1248px) {
+          transform: translateY(40px);
     font-size: 64px;
     width: 740px;
   }
@@ -30,7 +40,13 @@
 
 .fresh__box {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+
+  @media screen and (min-width:736px) {
+      gap: 16px;
+  }
 }
 
 .fresh__img__melon {

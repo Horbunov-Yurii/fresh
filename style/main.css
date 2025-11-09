@@ -53,7 +53,6 @@ body {
   max-width: 1248px;
   margin-inline: auto;
   padding: 0 10px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 355px) {
   .container {
@@ -813,8 +812,13 @@ body {
 }
 
 .fresh {
-  padding-top: 96px;
   padding-bottom: 80px;
+}
+.fresh .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .fresh__title {
@@ -829,15 +833,18 @@ body {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  transform: translateY(40px);
 }
-@media screen and (min-width: 735px) {
+@media screen and (min-width: 736px) {
   .fresh__title {
+    transform: translateY(32px);
     font-size: 54px;
     width: 648px;
   }
 }
 @media screen and (min-width: 1248px) {
   .fresh__title {
+    transform: translateY(40px);
     font-size: 64px;
     width: 740px;
   }
@@ -845,7 +852,13 @@ body {
 
 .fresh__box {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 736px) {
+  .fresh__box {
+    gap: 16px;
+  }
 }
 
 .fresh__img__melon {
@@ -942,4 +955,166 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.footer {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 736px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+.footer__logo {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #AE1332;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 736px) {
+  .footer__logo {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .footer__logo {
+    margin: 0;
+  }
+}
+.footer__logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1248px) {
+  .footer__logos {
+    gap: 20px;
+  }
+}
+.footer__grid {
+  width: 16px;
+  height: 17px;
+  margin-right: 8px;
+  fill: #AE1332;
+}
+.footer__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #AE1332;
+}
+.footer__list {
+  display: flex;
+  gap: 20px;
+}
+.footer__lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 44px;
+}
+@media screen and (min-width: 736px) {
+  .footer__lists {
+    margin-top: 38px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .footer__lists {
+    margin: 0;
+  }
+}
+.footer__icon {
+  fill: #AE1332;
+  width: 24px;
+  height: 24px;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #AE1332;
+}
+.footer__lister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 44px;
+}
+@media screen and (min-width: 736px) {
+  .footer__lister {
+    align-items: start;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1248px) {
+  .footer__lister {
+    margin-top: 40px;
+  }
+}
+.footer__itemer {
+  width: 100%;
+}
+.footer__itemer:last-child .footer__contact {
+  width: 160px;
+}
+@media screen and (min-width: 736px) {
+  .footer__itemer:last-child .footer__contact {
+    text-align: start;
+  }
+}
+.footer__contact {
+  width: 100%;
+  color: #AE1332;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 736px) {
+  .footer__contact {
+    text-align: start;
+  }
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1248px) {
+  .footer__content {
+    flex-direction: row;
+    gap: 243px;
+  }
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
