@@ -1160,12 +1160,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 .menu__color1 {
   background-color: #AE1332;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 124px;
+  padding-bottom: 512px;
 }
 .menu__icons {
   fill: #FFFFFF;
